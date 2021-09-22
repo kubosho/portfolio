@@ -1,3 +1,7 @@
+# Own project
+_site/
+build/
+
 # Logs
 logs
 *.log

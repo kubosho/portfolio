@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "declaration": true,
+    "declarationMap": true,
+    "experimentalDecorators": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "useDefineForClassFields": false
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+  ]
+}
