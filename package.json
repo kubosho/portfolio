@@ -7,6 +7,11 @@
   "author": "Shota Kubota <ta2@o2p.jp>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "build": "eleventy",
+    "clean": "rimraf ./_site/",
+    "serve": "eleventy --serve"
+  },
   "dependencies": {
     "classnames": "^2.3.1",
     "lit": "^2.0.0"
