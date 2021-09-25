@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>I'm kubosho</title>
+    <script type="module" src="./ks-header.js"></script>
+    <script type="module" src="./ks-self-introduction.js"></script>
+    <script type="module" src="./ks-experience.js"></script>
+    <script type="module" src="./ks-skill-set.js"></script>
+    <script type="module" src="./ks-contact.js"></script>
+    <style>
+      body {
+        padding: 0.94%;
+        margin: 0;
+        font-family: YuMincho, 'Yu Mincho', serif;
+        font-weight: 400;
+        text-rendering: optimizeLegibility;
+      }
+
+      h4 {
+        margin: 0 0 8px;
+        font-size: 20px;
+      }
+      @media (min-width: 725px) {
+        h4 {
+          margin: 0 0 16px;
+          font-size: 24px;
+        }
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.75;
+      }
+      @media (min-width: 725px) {
+        p {
+          font-size: 20px;
+        }
+      }
+
+      .experience-text > *:first-child {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <ks-header></ks-header>
+    <ks-self-introduction id="self-introduction"> {% include ../build/self-introduction.html %} </ks-self-introduction>
+    <ks-experience id="experience">
+      <span class="experience-text" slot="cse-experience"> {% include ../build/experiences/cse.html %} </span>
+      <span class="experience-text" slot="kayac-experience"> {% include ../build/experiences/kayac.html %} </span>
+      <span class="experience-text" slot="grani-experience"> {% include ../build/experiences/grani.html %} </span>
+      <span class="experience-text" slot="goodpatch-experience">
+        {% include ../build/experiences/goodpatch.html %}
+      </span>
+      <span class="experience-text" slot="cyberagent-experience">
+        {% include ../build/experiences/cyberagent.html %}
+      </span>
+    </ks-experience>
+    <ks-skill-set id="skill-set">
+      <div slot="programming-language-skill">{% include ../build/skill-sets/programming-language.html %}</div>
+      <div slot="library-skill">{% include ../build/skill-sets/library.html %}</div>
+      <div slot="natural-language-skill">{% include ../build/skill-sets/natural-language.html %}</div>
+    </ks-skill-set>
+    <ks-contact id="contact"></ks-contact>
+  </body>
+</html>
