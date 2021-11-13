@@ -93,4 +93,5 @@ ABEMA で主に使っている技術スタックとしては「React」「RxJS�
 #### 関連リンク
 
 - [AbemaTV における CSS is too fragile 問題に対する解 / Solution of "CSS is too fragile" by AbemaTV \- Speaker Deck](https://speakerdeck.com/kubosho/solution-of-css-is-too-fragile-by-abematv)
+- [ABEMA のアクセシビリティータスクフォースは何をしてきて何をやるか / What ABEMA accessibility task force has done and will do \- Speaker Deck](https://speakerdeck.com/kubosho/what-abema-accessibility-task-force-has-done-and-will-do)
 - [ABEMA Web で Polyfill のコードをモダンブラウザ向けに 99% 削減した話 \| CyberAgent Developers Blog](https://developers.cyberagent.co.jp/blog/archives/30373/)
