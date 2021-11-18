@@ -30,7 +30,7 @@ export class KSContact extends LitElement {
           <li>
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSd91FPe5BwaK9jluYc7vnVDcAQIOWaHWDcmt3cO1paj5eFlFw/viewform"
-              >お問い合わせフォーム</a
+              >お問い合わせ</a
             >
           </li>
           <li>
