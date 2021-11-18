@@ -6,11 +6,18 @@ export class KSHeader extends LitElement {
   static styles = css`
     header {
       max-width: 1260px;
-      margin: 0 auto;
+      margin: 32px auto 0;
+    }
+    @media (min-width: 725px) {
+      header {
+        margin-top: 128px;
+      }
     }
 
     h1 {
+      margin: 0;
       font-size: 54px;
+      line-height: 1;
     }
     @media (min-width: 725px) {
       h1 {
@@ -19,16 +26,29 @@ export class KSHeader extends LitElement {
     }
 
     ul {
+      display: flex;
+      justify-content: center;
       list-style-type: none;
       padding: 0;
+      margin-top: 32px;
+    }
+    @media (min-width: 725px) {
+      ul {
+        margin-top: 128px;
+      }
     }
 
     li {
+      margin-left: 1em;
       font-size: 16px;
       line-height: 1.75;
     }
+    li:first-child {
+      margin: 0;
+    }
     @media (min-width: 725px) {
       li {
+        margin-left: 2em;
         font-size: 24px;
       }
     }
