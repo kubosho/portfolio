@@ -11,11 +11,33 @@ export class KSContact extends LitElement {
       sectionStyles,
       css`
         section {
-          margin-top: 32px;
+          margin: 32px auto;
         }
         @media (min-width: 725px) {
           section {
-            margin-top: 64px;
+            margin: 64px auto 128px;
+          }
+        }
+
+        ul {
+          display: flex;
+          justify-content: center;
+          padding: 0;
+          list-style-type: none;
+        }
+
+        li {
+          margin-left: 1em;
+          font-size: 16px;
+          line-height: 1.75;
+        }
+        li:first-child {
+          margin: 0;
+        }
+        @media (min-width: 725px) {
+          li {
+            margin-left: 2em;
+            font-size: 24px;
           }
         }
       `,
