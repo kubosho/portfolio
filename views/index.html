@@ -11,7 +11,7 @@
     <script type="module" src="./ks-contact.js"></script>
     <style>
       body {
-        padding: 0.94%;
+        padding: 0 0.94%;
         margin: 0;
         font-family: YuMincho, 'Yu Mincho', serif;
         font-weight: 400;
@@ -35,6 +35,54 @@
       }
       @media (min-width: 725px) {
         p {
+          font-size: 20px;
+        }
+      }
+
+      li {
+        font-size: 16px;
+        line-height: 1.75;
+      }
+      @media (min-width: 725px) {
+        li {
+          font-size: 20px;
+        }
+      }
+
+      dl {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      dt {
+        width: 30%;
+        margin: 8px 0 0;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.75;
+      }
+      dt:first-of-type {
+        margin: 0;
+      }
+      @media (min-width: 725px) {
+        dt {
+          width: 15%;
+          font-size: 20px;
+        }
+      }
+
+      dd {
+        width: 70%;
+        margin: 8px 0 0;
+        font-size: 16px;
+        line-height: 1.75;
+      }
+      dd:first-of-type {
+        margin: 0;
+      }
+      @media (min-width: 725px) {
+        dd {
+          width: 85%;
           font-size: 20px;
         }
       }
